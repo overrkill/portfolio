@@ -1,12 +1,8 @@
 .App {
   text-align: center;
   min-height: 100vh;
-  display: flex;
-
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   font-size: calc(10px + 2vmin);
   color: white;
   background-color: #282c34;
@@ -25,20 +21,21 @@
   max-height: 10vh;
 }
 
-.content{
-  min-height: 100%;
+.Content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px , 1fr));
+}
+
+.info{
+
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  min-height: 90vh;
+  align-items: center;
 }
+.card{
+  text-align: left;border-radius: 10px;
+  padding: 1rem;
 
-.content p{
-  color: #61dafb;
-  text-align: left;
-}
 
-.App-link {
-  color: #61dafb;
 }

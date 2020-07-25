@@ -5,22 +5,30 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        Abhishek Kale
+        AK
       </header>
 
-      <div className="content">
-        <h3>
-          Abhishek
-          Kale
-       </h3>
-        <p>
-          Creative Coder <br />
-         Developer <br />
-        </p>
-      </div>
+      <div className="Content">
 
+        <div className="info">
+
+          <div className="card">
+            <strong>Abhishek Kale </strong><br />
+            Developer <br />
+            Location: Pune,IN <br />
+            Email: userabhishek@protonmail.com
+          </div>
+        </div>
+        <div className="tabs">
+          tabs
+          projects
+          <br />
+
+
+        </div>
+      </div>
       <footer>
-        site is under development
+        this will be  a footer
       </footer>
     </div>
   );
